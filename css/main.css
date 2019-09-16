@@ -5,8 +5,7 @@
 *, ::before, ::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: calc(0.5em + 1vh);
+    box-sizing: border-box; 
 }
 
 /* El estilo base para moviles */
@@ -62,6 +61,7 @@ p{
 /* Big area */
 .big-hero img {
     width: 150px;
+    margin-top: 4em; /*00163217*/
 }
 
 .big-hero h2 {
@@ -81,22 +81,30 @@ p{
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: center
-
+    justify-content: center;
 }
 
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    margin: 0 0.4em; /* 00163217*/
+    font-size: 3em;
 }
 
+a.hide-mobile.show-desktop{ /*00163217*/
+    color:#0AC693; 
+    margin-top: 1.5em;
+    margin-bottom: 5.1em;
+    font-size: 2em;
+    
+}
 
 .green-area {
     background-color: #0AC693; 
+    margin-bottom: 5em;
+    
 }
 
 
@@ -259,6 +267,17 @@ footer .social-links {
     text-decoration: none;
     
 }
+
+/* 00163217 */
+.menu li:last-child a:last-child{
+    color: red;
+}
+
+
+
+
+
+
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
