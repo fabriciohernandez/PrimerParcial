@@ -126,15 +126,16 @@ a.hide-mobile.show-desktop{ /*00163217*/
 .post ul li {
     min-height: 300px;
     max-width: 350px;
-    margin: 2rem auto;
+ 
+
 }
 
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
     background-color: #ffffff;
-    text-align: left;
-    padding-bottom: 2em;
+    text-align: left;  
+    margin-bottom: 2em;
 }
 
 .post article img{
@@ -163,7 +164,7 @@ a.hide-mobile.show-desktop{ /*00163217*/
 /* About */
 
 .about{
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 .about h2 {
@@ -172,6 +173,7 @@ a.hide-mobile.show-desktop{ /*00163217*/
     font-size: 1.125em;
     margin: 2em;
 }
+
 
 .bio-info img{
    width: 200px;
@@ -207,6 +209,20 @@ a.hide-mobile.show-desktop{ /*00163217*/
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
+}
+
+.about .bio-info{
+    width: 50em;
+    margin-right: 5em;
+}
+
+.about .contact{
+    width: 50em;
+}
+
+.about .container[class]{
+    display: flex;
+    flex-direction: row;
 }
 
 /* Decorando placeholder */
@@ -275,32 +291,25 @@ footer .social-links {
 }
 
 
-
-
-
-
-
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
     .post ul {
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;       
+        justify-content: center;    
     }
     
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
-        margin: 1rem 2rem;
-        flex: 1 0 300px;
+        margin: 0 3.5em;
+        flex: 1 0 350px;
     }
 
 
-    .logo {
+    .logo{
         width: 150px;
-        
     }
 
     .show-desktop {
