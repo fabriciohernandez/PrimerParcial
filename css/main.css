@@ -215,7 +215,7 @@ a.hide-mobile.show-desktop{ /*00163217*/
 }
 
 .about .bio-info{
-    width: 20em;
+    width: 22em;
 }
 
 .about .contact{
@@ -445,5 +445,41 @@ footer .social-links {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    .big-hero img {
+        margin-top: 5em;
+    }
+
+    .post ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 1em;
+    }
+
+    .post{
+        width: 80em;
+    }
+
+    .post h2{
+        padding-bottom: 1em;
+    }
+
+    .about .bio-info{
+        width: 40em;
+        margin-right: 4em;
+    }
+    
+    .about .contact{
+        width: 35em;
+        margin-bottom: 2.5em;
+        margin-left: 1em;
+    }
+
+    .about .container{
+        width: 80em;
+
+        
     }
 }
