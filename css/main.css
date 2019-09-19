@@ -220,7 +220,7 @@ a.hide-mobile.show-desktop{ /*00163217*/
 
 .about .contact{
     width: 20em;
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
 }
 
 .container label{
@@ -304,17 +304,16 @@ footer .social-links {
   
     .post ul {
         list-style: none;
-        display: flex;       
-        justify-content: center;    
+        display: grid;  
+        grid-template-columns: auto auto;     
     }
     
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
-        margin: 0 3.5em;
+        margin: 0 1em;
         flex: 1 0 350px;
     }
-
 
     .logo{
         width: 150px;
@@ -337,6 +336,22 @@ footer .social-links {
         display: flex;      
     }
 
+    .about .bio-info{
+        width: 42em;
+    }
+    
+    .about .contact{
+        width: 40em;
+        margin-bottom: 2.5em;
+    }
+
+    a.hide-mobile.show-desktop{
+        color:#0AC693; 
+        margin-top: 1.5em;
+        margin-bottom: 3.8em;
+        font-size: 2.5em;
+        
+    }
 
 
 
@@ -345,8 +360,80 @@ footer .social-links {
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+    .post ul {
+        list-style: none;
+        display: grid;  
+        grid-template-columns: auto auto auto;     
+    }
+    
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        margin: 0 1em;
+        flex: 1 0 350px;
+    }
 
+    .logo{
+        width: 150px;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;      
+    }
+
+    .about .bio-info{
+        width: 32em;
+        
+    }
+
+    .about h2{
+        grid-column: 1/5;
+        
+    }
+    
+    .about .contact{
+        width: 30em;
+        
+    }
+
+    .about .container{
+        display: grid;
+        grid-template-columns: auto auto auto;  
+        
+    }
+
+    .bio-info img{
+        width: 200px;
+     }
+
+    a.hide-mobile.show-desktop{
+        color:#0AC693; 
+        margin-top: 1.5em;
+        margin-bottom: 3.8em;
+        font-size: 2.5em;
+        
+    }
+
+    .contact-form input[type=submit] {
+        background-color: #F74442;
+        font-weight: 400;
+        width: 13em;
+        color: white;
+        font-size: 1rem;
+    }
 
 
 }
