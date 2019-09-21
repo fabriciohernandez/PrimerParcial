@@ -46,39 +46,38 @@ p{ /* Aplicamos un tamaño de fuente de 0.75 em, establecemos la distancia entre
     text-decoration: none; /*al ser una lista es importante que no tenga ninguna decoracion que traen por defecto*/
     position: relative; /*se establece su posicion relativa para que vaya acode al flujo normal del documento*/
     top: 30%; /*al estar posicionado de manera relativa, la propiedad top nos  determina el posicionamiento hacia abajo*/
-    right: 95%;
+    right: 95%; /*establecemos el posicionamiento a la derecha*/
     font-size: 1.5rem;
     
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    flex-wrap: wrap; 
+    align-items: flex-start; /*hacemos que los elementos dentro de options empiezen al inicio */
 
 }
 .options i:last-child {
-    font-size: 1.6rem;
+    font-size: 1.6rem; /*seleccionamos al ultimo hijo de la etiqueta i y le aplicamos el tamaño de letra de 1.6rem*/
 }
 
 /* Big area */
-.big-hero img {
-    width: 150px;
-    
+.big-hero img { 
+    width: 150px; /*seleccionamos el elemento imagen con clase big-hero y le aplicamos un ancho de 150px*/ 
 }
 
 .big-hero h2 {
-    font-size: 1.875em;
+    font-size: 1.875em; /*seleccionamos el encabezado h2 y le aplicamos un peso de 700, un tamaño de letra, un espaciado de letra y un margen en la paret superior*/
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
 
-.big-hero p {
+.big-hero p { /*seleccionamos el parrafo dentro de la clase big-hero y se le aplica un tamaño de letra y u color de la misma*/
     font-size: 0.7em;;
     color: #D7DEE6;
 
 }
 
 /* Social links*/
-.social-links{
+.social-links{ /*quitamos el estilo de letra y sus elementos los colocamos al centro gracias a la propiedad flex, ademas le añadimos un margen en la parte inferior*/
     list-style: none;
     padding: 0;
     display: flex;
@@ -87,14 +86,14 @@ p{ /* Aplicamos un tamaño de fuente de 0.75 em, establecemos la distancia entre
     margin-bottom: 5.5em;
 }
 
-.social-links li a{
+.social-links li a{/*seleccionamos dentro de la clase social links los elemenots que son li y dentro de ellos a sus etiquetas a, aplicamos color, quitamos la decoracion y colocamos una separacion entre ellos de 0.4 em*/
     color: #D7DEE6;
     text-decoration: none;
-    margin: 0 0.4em; /* 00163217*/
+    margin: 0 0.4em; 
     font-size: 3em;
 }
 
-a.hide-mobile.show-desktop{ /*00163217*/
+a.hide-mobile.show-desktop{ 
     color:#0AC693; 
     margin-top: 1.5em;
     margin-bottom: 5.1em;
@@ -102,23 +101,23 @@ a.hide-mobile.show-desktop{ /*00163217*/
     
 }
 
-.green-area {
+.green-area { /*a la clase green area le colocamos un color de fondo*/
     background-color: #0AC693; 
 }
 
 
-.post {
+.post { /*seleccionamos la clase post en la cual estan los articulos, les añadimos u padding de 1em y un margen inferior de -2px*/
     padding: 1em;
     margin-bottom: -2px;
 }
-.post h2 {
+.post h2 { /* los encabezados h2 de la clase post de colocan en mayuscula y en negrita con un tamaño de 1.125em y margen de 1em*/ 
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 1em;
 }
 
-.post ul {
+.post ul { /*le quitamos el estilo a la lista y a sus elementos los mostramos en el centro en columna */
     list-style: none;
     display: flex;
     justify-content: center;
@@ -126,14 +125,14 @@ a.hide-mobile.show-desktop{ /*00163217*/
     flex-direction: column;
 }
 
-.post ul li {
+.post ul li { 
     min-height: 200px;
     max-width: 300px;
  
 
 }
 
-.post ul li article {
+.post ul li article { /*con la propiedad overflow hidden el contenido es recortado y no se muestran barras de posición.*/
     overflow: hidden;
     border-radius: 10px;
     background-color: #ffffff;
@@ -141,13 +140,13 @@ a.hide-mobile.show-desktop{ /*00163217*/
     margin-bottom: 2em;
 }
 
-.post article img{
+.post article img{ /*con la propiedad cover hacemos que la imagen se redimensione dentro del contenedor*/
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
 
-.post article h3 {
+.post article h3 { /* con la propiedad elipsis hacemos que si no cabe el texto se coloquen unos puntos suspensivos */
     color: #0D5061;
     margin-top: 2em;
     padding: 0em 1rem;
@@ -157,20 +156,20 @@ a.hide-mobile.show-desktop{ /*00163217*/
     text-overflow: ellipsis;
 }
 
-.post article p {
+.post article p {/*aplicamos propiedades basicas, se comentaron con anterioridad*/
     color:#112935;
-    font-size: 0.75em;
+    font-size: 0.75em; /*seleccionamos dentro de la clase post los parrafos dentro de los articulos*/
     padding: 1rem;
     line-height: 25px;
 }
 
 /* About */
 
-.about{
+.about{/*aplicamos propiedades basicas, se comentaron con anterioridad*/
     margin-top: 0em;
 }
 
-.about h2 {
+.about h2 { /*aplicamos propiedades basicas, se comentaron con anterioridad*/
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
@@ -178,11 +177,11 @@ a.hide-mobile.show-desktop{ /*00163217*/
 }
 
 
-.bio-info img{
+.bio-info img{ /*aplicamos propiedades basicas, se comentaron con anterioridad*/
    width: 150px;
 }
 
-.bio-info p{
+.bio-info p{ /*aplicamos propiedades basicas, se comentaron con anterioridad*/
     font-size: 16px;
     padding: 2em;
     text-align: left;
@@ -190,44 +189,44 @@ a.hide-mobile.show-desktop{ /*00163217*/
     letter-spacing: 2px;
 }
 
-.contact {
+.contact { /*aplicamos propiedades basicas, se comentaron con anterioridad*/
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
 }
 
-.contact * + * {
+.contact * + * { /*seleccionamos dentro de la clase todos los primeros elemetos de todo*/
     margin-top: 1.5em;
 }
 
-.contact-form {
+.contact-form { /*aplicamos propiedades basicas, se comentaron con anterioridad*/
     display: flex;
     flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea{
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0px 2em;
+.contact-form input, .contact-form textarea{ /*seleccionamos los inputs dentro de la clase cotactform y solo el area de texto*/
+    padding: 1rem 2rem; 
+    border: none; /*quitamos los bordes*/
+    border-radius: 0px 2em; /*colocamos un borde redondeado solo para la parte dereha*/
     font-size: 1em;
     width: 100%;
 }
 
-.about .bio-info{
+.about .bio-info{ /*establecemos un ancho de 22em*/
     width: 22em;
 }
 
 .about .contact{
     width: 20em;
-    margin-bottom: 2.5em;
+    margin-bottom: 2.5em; /*seleccionamos dentro de la clase .about los elemntos que tengan la clase .contact, aplicandoles un margen inferior de 2.5 em*/
 }
 
-.container label{
+.container label{  /*aplicamos propiedades basicas, se comentaron con anterioridad*/
     font-weight: bold;
 }
 
-.about .container{
+.about .container{ /*seleccionamos el contenedor dentro de la clase about y hacemos que los elementos se muestren en columna*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,42 +258,42 @@ a.hide-mobile.show-desktop{ /*00163217*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
-    padding-top: 2em;
+    padding-top: 2em; /*aplicamos propiedades basicas, se comentaron con anterioridad*/
 }
 
 footer .social-links {
-    margin: 0;
+    margin: 0; /*aplicamos propiedades basicas, se comentaron con anterioridad quitamos el margen*/
 }
 
 .menu {
     background-color: #112935;
     position: absolute;
-    z-index: 20;
+    z-index: 20; /*determiamos que lementos cubren a otros*/
     top: 60px;
     right: 0;
     width: 100vw;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 60px); /*para la altura del menu realizamos un calculo de 100 view heigh menos 60 px */
 }
 
 .menu {
-    list-style: none;
-    text-align: left;
+    list-style: none; /*quitamos todo estilo de la lista*/
+    text-align: left; /*lo alinemos a la izquierda*/
     padding: 1em;
 }
-.menu li {
+.menu li { /*lo mostramos en bloque*/
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
 
-.menu li a {
+.menu li a { /*aplicamos propiedades basicas, se comentaron con anterioridad*/
     color: white;
     text-decoration: none;
     
 }
 
 /* 00163217 */
-.menu li:last-child a:last-child{
+.menu li:last-child a:last-child{ /*al ultimo hijo de la lista selecionamos el que tiene la etiqueta a y le aplicamos color rojo*/
     color: red;
 }
 
