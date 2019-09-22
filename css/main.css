@@ -301,13 +301,13 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 736px) {
   
-    .post ul {
+    .post ul { /*aplicamos las siguientes propiedades para que os articulos queden en posicion de cuadrado, es decir dos y 1 a la izquierda y no en medio*/
         list-style: none;
         display: grid;  
         grid-template-columns: auto auto;     
     }
     
-    .post ul li {
+    .post ul li { 
         min-height: 350px;
         max-height: 3500px;
         margin: 0 1em;
@@ -339,7 +339,7 @@ footer .social-links {
         width: 42em;
     }
     
-    .about .contact{
+    .about .contact{ /*se aplica un poco de separacion entre los elementos*/
         width: 40em;
         margin-bottom: 2.5em;
     }
@@ -357,7 +357,7 @@ footer .social-links {
 
     .post ul {
         list-style: none;
-        display: grid;  
+        display: grid;  /*igual que en el de tablets, simplemente que haga que se agrupan tres */
         grid-template-columns: auto auto auto;     
     }
     
@@ -394,7 +394,7 @@ footer .social-links {
         
     }
 
-    .about h2{
+    .about h2{ /*posicionamos todo el encabezado de la parte de about en la parte superior*/
         grid-column: 1/5;
         
     }
@@ -426,7 +426,7 @@ footer .social-links {
         background-color: #F74442;
         font-weight: 400;
         width: 13em;
-        color: white;
+        color: white; /*reducimos el tamaño del boton de submit*/
         font-size: 1rem;
     }
 
